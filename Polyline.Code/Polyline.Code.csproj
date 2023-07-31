@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Polyliner</Title>
+        <Authors>Anthony Maio</Authors>
+        <Description>A library for encoding and decoding Google's Encoded Polyline Format</Description>
+        <PackageProjectUrl>https://github.com/anthonym21/Polyline.Code</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/anthonym21/Polyline.Code</RepositoryUrl>
+        <RepositoryType>github</RepositoryType>
+        <PackageTags>polyline, encoded polyline, net6</PackageTags>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <NeutralLanguage>en-US</NeutralLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+      <DebugType>embedded</DebugType>
+      <DocumentationFile>bin\Debug\Polyline.Code.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>embedded</DebugType>
+      <DocumentationFile>bin\Release\Polyline.Code.xml</DocumentationFile>
+    </PropertyGroup>
+
+</Project>
